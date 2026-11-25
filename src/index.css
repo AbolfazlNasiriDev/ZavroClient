@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: #2e2e2e;
+  color: #eeeeec;
+  font-family: -apple-system, "Cantarell", "Ubuntu", "Segoe UI", Roboto,
+    sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #2e2e2e;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #3584e4 !important;
+}

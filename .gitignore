@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+target/
+dist/
+src-tauri/target/
+src-tauri/gen/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Packaged artifacts (built by CI, never committed)
+*.AppImage
+*.rpm
+*.deb
+
+# Xray-core sidecar + geo data (fetched at CI build time from XTLS/Xray-core,
+# never vendored in git)
+src-tauri/binaries/xray*
+src-tauri/resources/*.dat
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
